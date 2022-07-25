@@ -1,0 +1,21 @@
+package com.greatlearning.employeemanagement.service;
+
+import java.util.List;
+
+import com.greatlearning.employeemanagement.entity.Employee;
+import com.greatlearning.librarymanagement.entity.Book;
+
+public interface EmployeeService {
+	
+	List<Employee> findAll();
+	
+	void save(Employee theEmployee);
+	
+	Employee findById(int theId);
+	
+	void deleteById(int theId);
+	
+	List<Employee> searchBy(String firstName, String employeeId);
+
+
+}

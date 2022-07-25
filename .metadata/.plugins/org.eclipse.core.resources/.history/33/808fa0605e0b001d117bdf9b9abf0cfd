@@ -1,0 +1,5 @@
+package com.greatlearning.employeemanagement.repository;
+
+public interface EmployeeRepository {
+
+}

@@ -1,0 +1,32 @@
+package com.greatlearning.employeemanagement.controller;
+
+import java.util.List;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import com.greatlearning.employeemanagement.entity.Employee;
+import com.greatlearning.employeemanagement.service.EmployeeService;
+
+@Controller
+@RequestMapping("/employees")
+public class EmployeesController {
+	
+	@Autowired
+	private EmployeeService employeeService;
+	
+	@RequestMapping("/list")
+	public String handleListAll(Model model) {
+		
+		List<Employee> theEmployees = employeeService.findAll();
+
+		// add to the spring model
+		model.addAttribute("employees", theEmployees);
+		
+		return "employees-lister";
+		
+	}
+
+
+}

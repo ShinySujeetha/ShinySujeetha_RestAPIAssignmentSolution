@@ -1,0 +1,5 @@
+package com.greatlearning.employeemanagement.security;
+
+public class EmployeeWebSecurityConfigurerAdapter {
+
+}

@@ -1,0 +1,12 @@
+package com.greatlearning.employeemanagement.controller;
+
+@Controller	
+public class WelcomeController {
+			@RequestMapping("/")
+		public String handleWelcomePage() {
+			return "welcome";
+		}
+		
+	
+
+}

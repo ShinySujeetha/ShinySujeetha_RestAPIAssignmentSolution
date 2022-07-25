@@ -1,0 +1,11 @@
+package com.greatlearning.employeemanagement.service;
+
+import java.util.List;
+
+import com.greatlearning.employeemanagement.entity.Employee;
+
+public interface EmployeeServiceImpl {
+	
+	List<Employee> findAll();
+
+}
